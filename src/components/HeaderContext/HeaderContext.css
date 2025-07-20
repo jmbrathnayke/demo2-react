@@ -1,0 +1,28 @@
+#navcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  border-bottom: 1px solid #000000;
+  width: 100vw;
+  margin: 0;
+  height: 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#navcontent img {
+  height: 40px;
+  width: auto;
+}
+
+#navcontent a {
+  display: flex;
+  align-items: center;
+}
+
+#navcontent > div {
+  display: flex;
+  gap: 1rem;
+}

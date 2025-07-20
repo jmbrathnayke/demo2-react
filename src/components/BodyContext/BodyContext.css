@@ -1,0 +1,9 @@
+.content{
+     color: rgb(0, 0, 0);
+     text-align: center;
+
+}
+.content :hover{
+    color: royalblue;
+    transition: all 0.3s ease-in-out;
+}
