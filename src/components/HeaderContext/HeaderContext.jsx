@@ -10,11 +10,11 @@ import logo from '../../assets/react.svg';
     <img src="vite.svg" alt="react" />
      </a>
 <div>
-    
-    <MenuLink linkname="Home" url="#home" />
-    <MenuLink linkname="About" url="#about" />
-    <MenuLink linkname="Contact" url="#contact" />
-    <MenuLink linkname="Login" url="#login" />
+    {/* Render the MenuLink components for navigation */}
+    <MenuLink linkname="Home" url="/" />
+    <MenuLink linkname="About" url="/about" />
+    <MenuLink linkname="Contact" url="/contact" />
+    <MenuLink linkname="Login" url="/login" />
      
        
 </div>

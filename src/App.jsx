@@ -40,7 +40,7 @@ const styles ={
   }
   return (
       <div id="wrapper">
-       <HeaderContext />
+       <HeaderContext /> 
        <BodyContext>
           
            <button onClick={handleClick1}>Click Here 1</button>
