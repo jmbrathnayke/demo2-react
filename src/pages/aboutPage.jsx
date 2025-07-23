@@ -8,7 +8,12 @@ import React from 'react';
 // Function to handle button click
   //let num1 = 10;
 
+
+  // Using useState to manage the number of clicks
+  // This allows us to update the state and re-render the component when the state changes
 const [clicks, setClicks] = useState(0);
+
+
   // Using useState to manage state in functional components
   // This allows us to update the state and re-render the component when the state changes
  const [num1, setNum1] = useState(10);
