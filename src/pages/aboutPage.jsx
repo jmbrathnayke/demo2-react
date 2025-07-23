@@ -1,13 +1,14 @@
 import HeaderContext from '../components/HeaderContext/HeaderContext'
 import BodyContext from '../components/BodyContext/BodyContext'
 import '../App.css'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import React from 'react';
 
  function AboutPage() {
 // Function to handle button click
   //let num1 = 10;
 
-
+const [clicks, setClicks] = useState(0);
   // Using useState to manage state in functional components
   // This allows us to update the state and re-render the component when the state changes
  const [num1, setNum1] = useState(10);
@@ -39,6 +40,11 @@ import { useState } from 'react';
       setCount(count + 1);
     }
    
+    // Effect to update the document title whenever clicks change
+    useEffect(() => {
+        document.title = `you clicked ${clicks} times`;
+        console.log(`You clicked ${clicks} times`);
+    }, [count]);
 
   return (
     <div id="wrapper-1">
@@ -66,6 +72,12 @@ import { useState } from 'react';
       <p>{count}</p>
 
     </div>
+    <br />
+
+    {/* Display the number of clicks */}
+     {/* Display the current value of num2 */}
+        <p>you clicked {clicks} times</p>
+        <button onClick={() => setClicks(clicks + 1)}>Click Me</button>
 
     </BodyContext>
     </div>

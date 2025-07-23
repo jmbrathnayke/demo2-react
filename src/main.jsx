@@ -6,7 +6,7 @@ import { createBrowserRouter,RouterProvider,} from "react-router-dom";
 import AboutPage from './pages/aboutPage.jsx';
 import ContactPage from './pages/contactPage.jsx';
 import LoginPage from './pages/loginPage.jsx';
-
+import ContentPage from './pages/contentPage.jsx';
 // Create a router with a single route that renders the App component
 const router = createBrowserRouter([
 
@@ -31,6 +31,11 @@ const router = createBrowserRouter([
         path: "/login",
         element: <LoginPage />,
       }
+
+      ,{// Content Page Route
+        path: "/content",
+        element: <ContentPage />,
+  }
 
 ]);
 
