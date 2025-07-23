@@ -7,7 +7,7 @@ import logo from '../../assets/react.svg';
     <div id='navcontent'>
     <a href="http://www.react.dev">
     <img src={logo} alt='React Logo' />
-    <img src="vite.svg" alt="react" />
+    
      </a>
 <div>
     {/* Render the MenuLink components for navigation */}
