@@ -14,16 +14,22 @@ import '../App.css'
     return total;
   }
 
+
+//============================================================
 // Example of using rest parameters in a function with multiple parameters
   function mybio(name,age,...rest){
     console.log(name,age,rest);
 
   }
+  // Example of using rest parameters to pass multiple arguments
+  // This allows you to pass any number of additional arguments after the first two
   mybio("John", 30, "Engineer", "Loves coding");
-
   console.log(sum(5, 10,2,3,4,5,))
    console.log(sum(5, 10,2,3,4,5,5))
-   
+
+   //===========================================================
+   // Example of using spread operator to find max and min in an array
+   // The spread operator allows you to expand an iterable (like an array) into individual elements
    let arr = [5, 10, 2, 3, 4, 5, 6];
    console.log(Math.max(...arr))
    console.log(Math.min(...arr))
