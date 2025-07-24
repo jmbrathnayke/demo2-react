@@ -6,7 +6,7 @@ import '../App.css'
 
 
  function loginPage() {
-  //boolean variable
+  //loggedin boolean variable
    const loggedin = true;
 
     // Example of using an array and its length
@@ -18,7 +18,7 @@ import '../App.css'
     <HeaderContext />
     <h3 style={{ color: 'blue' }}>Login Page Content</h3>
 
-    {/* Conditional rendering based on the loggedin variable */}
+    {/* Conditional rendering based on components rendering (for the loggedin variable) */}
     {loggedin && <LoggedIn />}
     {!loggedin && <LoggedOut />}
 
