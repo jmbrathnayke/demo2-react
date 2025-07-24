@@ -17,6 +17,7 @@ import logo from '../../assets/react.svg';
     <MenuLink linkname="Login" url="/login" />
     <MenuLink linkname="Content" url="/content" />
     <MenuLink linkname="Product" url="/product" />
+    <MenuLink linkname="Map" url="/map" />
 
 </div>
     </div>
