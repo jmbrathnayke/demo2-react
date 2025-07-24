@@ -38,6 +38,8 @@ const styles ={
     console.log('Button clicked 4!' + new2button);
 
   }
+
+
   return (
       <div id="wrapper">
        <HeaderContext /> 

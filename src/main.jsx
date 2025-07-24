@@ -7,6 +7,8 @@ import AboutPage from './pages/aboutPage.jsx';
 import ContactPage from './pages/contactPage.jsx';
 import LoginPage from './pages/loginPage.jsx';
 import ContentPage from './pages/contentPage.jsx';
+import ProductPage from './pages/productPage.jsx';
+
 // Create a router with a single route that renders the App component
 const router = createBrowserRouter([
 
@@ -35,7 +37,15 @@ const router = createBrowserRouter([
       ,{// Content Page Route
         path: "/content",
         element: <ContentPage />,
-  }
+
+      },
+
+      {// Product Page Route
+        path: "/product",
+        element: <ProductPage />,
+      },
+
+     
 
 ]);
 
