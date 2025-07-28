@@ -4,6 +4,7 @@ import BodyContext from './components/BodyContext/BodyContext'
 import './App.css'
 import styled from 'styled-components'
 
+
 //styled components css apply type
 const Title = styled.h3`
 color: brown;
@@ -41,39 +42,39 @@ const styles ={
 
 
   return (
-      <div id="wrapper">
-       <HeaderContext /> 
-       <BodyContext>
-          
-           <button onClick={handleClick1}>Click Here 1</button>
-            <button onClick={handleClick2}>Click Here 2</button>
-            {/* anonymous function for  handleClick3 */}
-             <button onClick={(z) => handleClick3("btn3",z)}>Click Here 3</button>
-              <button onClick={() => handleClick4("btn4")}>Click Here 4</button>
-       </BodyContext>
+  <>
+    <div id="wrapper">
+      <HeaderContext /> 
+      <BodyContext>
+        <button onClick={handleClick1}>Click Here 1</button>
+        <button onClick={handleClick2}>Click Here 2</button>
+        {/* anonymous function for  handleClick3 */}
+        <button onClick={(z) => handleClick3("btn3",z)}>Click Here 3</button>
+        <button onClick={() => handleClick4("btn4")}>Click Here 4</button>
+      </BodyContext>
 
-        {/* for  external css */}
-       <div className="body-content-1">
+      {/* for  external css */}
+      <div className="body-content-1">
         <p>(external css)Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic!</p>
-       </div>
+      </div>
 
-        {/*inline css type(1)*/}
-        <div className="body-content-2">
+      {/*inline css type(1)*/}
+      <div className="body-content-2">
         <p style={{ color:'blue', marginBottom: '2em' ,fontSize:'2rem' }}>(internal css) Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic!</p>
       </div>
-  {/*inline css type(2) variable called*/}
+      {/*inline css type(2) variable called*/}
       <div className="body-content-3">
         <p style={styles}>(internal css) Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic!</p>
       </div>
 
-
-     {/*inline css type(3) styled components*/}
+      {/*inline css type(3) styled components*/}
       <Title>
         hello styled!!
       </Title>
-      
+    </div>
 
-       </div>
+   
+  </>
   )
 }
 

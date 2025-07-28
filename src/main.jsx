@@ -9,6 +9,7 @@ import LoginPage from './pages/loginPage.jsx';
 import ContentPage from './pages/contentPage.jsx';
 import ProductPage from './pages/productPage.jsx';
 import MapPage from './pages/mapPage.jsx';
+import ContextPage from './pages/contextPage.jsx';
 
 // Create a router with a single route that renders the App component
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {// Map Page Route
         path: "/map",
         element: <MapPage />,
+      }
+      ,{// Context Page Route
+        path: "/context",
+        element: <ContextPage />,
       }
 
 ]);
